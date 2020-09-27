@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/*-------header section----------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.bg-img {
+    background-image: url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.num {
+    list-style: none;
+    color: #fff;
+    font-weight: 700px;
+}
+
+.head-profile {
+    border-radius: 60px;
+    margin-top: 11rem;
+    height: 15vh;
+}
+
+.head-text {
+    margin-top: 14rem;
+    font-weight: 400px;
+    font-size: 22px;
+}
+
+.header-btn {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    align-items: right;
+}
+
+.header-btn:hover {
+    background-color: #000000;
+    color: orangered;
+    border: ipx solid orangered;
+}
+
+.card-profile {
+    margin-left: 22rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    width: 12%;
+    height: 5rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.num {
+    display: inline;
+    align-items: flex-end;
+}
+
+
+/*-------section-two----------*/
+
+.fa-star {
+    color: gold;
+}
+
+.card-img-top {
+    width: 200px;
+}
+
+.features-ul {
+    list-style: none;
+    width: 50%;
+    padding: 1rem 0 0 0;
+    height: 47vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.features-ul1 {
+    list-style: none;
+    width: 50%;
+    padding: .5rem 0 0;
+    height: 10vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.text-color {
+    font-weight: 700px;
+    font-size: 16px;
+    color: #D65A31;
+}
+
+.h6-text {
+    font-size: 12px;
+}
+
+.text-color1 {
+    font-weight: 700px;
+    font-size: 22px;
+    color: #D65A31;
+}
+
+.p-text {
+    color: #000;
+    font-size: 15px
+}
+
+.line {
+    width: 100%;
+    border-bottom: .35px solid rgb((37, 34, 34)48, 146, 146);
+    white-space: pre-line;
+}
+
+.btn-link {
+    color: #fff;
+    border-radius: 45px;
+    border: 1px solid #fff;
+}
+
+.btn-link:hover {
+    color: #fff;
+}
+
+p {
+    margin: 0
+}
+
+.people-wrap {
+    width: 33%;
+    display: flex;
+    align-items: center
+}
+
+img {
+    display: block
+    /* remove gap*/
+}

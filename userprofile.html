@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>UserProfile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome ---->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- google fonts --->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--- Main CSS ------>
+    <link rel="stylesheet" href="./css/userprofile.css">
+</head>
+
+<body>
+
+    <!---------------------navbar section--------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white ml-4" href="#">Culconnect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <form class="form-inline my-2 my-lg-0 ml-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </ul>
+            <div class="nav-item active">
+                <a class="nav-link text-white" href="#"><i class="fas fa-globe-africa fa-x2"> Explore</i><span class="sr-only">(current)</span></a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="fas fa-user-friends fa-x2"> Mates</i></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="far fa-envelope fa-x2"> Messages</i></a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link text-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="20" height="20"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M20.64,13.76c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM72.24,13.76c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM123.84,13.76c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM20.64,65.36c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM72.24,65.36c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM123.84,65.36c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM20.64,116.96c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM72.24,116.96c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88zM123.84,116.96c-3.79432,0 -6.88,3.08568 -6.88,6.88v27.52c0,3.79432 3.08568,6.88 6.88,6.88h27.52c3.79432,0 6.88,-3.08568 6.88,-6.88v-27.52c0,-3.79432 -3.08568,-6.88 -6.88,-6.88z"></path></g></g></svg> More</i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="fas fa-bell mr-1"></i></i></a>
+            </div>
+            <div class="mr-4">
+                <img src="./images/nav-profile.jpg" alt="" class=" ." style="border-radius: 45px;">
+            </div>
+        </div>
+    </nav>
+
+    <!-----------------------header section---------------------------->
+    <header class="container-fluid bg-img">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./images/nav-profile.jpg" alt="." class="img-fluid head-profile">
+                            </div>
+                            <div class="head-text">
+                                <h4 class="text-white">Fidelis Inaku</h4>
+                                <div class="col">
+                                    <button type="button" class="btn btn-link">Caleb University</button>
+                                    <i class="fas fa-ellipsis-h text-white ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="col head-text">
+                                <img src="./images/stroke.png" alt="" class="bg-success ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 text-right " style="top: 18rem; list-style: none;">
+                    <div class="container num">
+                        <div class="text-white  ">
+                            <ul class="row ">
+                                <li>300</li>
+                                <li style="margin-left: 2.5em;">250</li>
+                                <li style="margin-left: 2.5em;">1.5k</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col ">
+                        <button type="button " class="btn header-btn ">Unfriend</button>
+                        <button type="button " class="btn header-btn ml-2">
+                            <i class="far fa-envelope fa-x2 "> Messages</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="container ">
+                    <div class="row ">
+
+                        <div class="card card-profile ">
+                            <div class="card-body ">
+                                <a href=" ">
+                                    <p class="card-text text-dark ">Report Profile</p>
+                                </a>
+                                <a href=" ">
+                                    <p class="card-text pb-1 text-dark ">Book User</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!----------------------------section-two--------------------------->
+
+    <div class="container-fluid mt-5 ">
+        <div class="row ">
+
+            <div class="col-md-4 features ">
+                <ul class="features-ul ml-5 pl-3">
+                    <li class="feature0">Profile</li>
+                    <hr class="line ">
+                    <li class="feature1 pb-3 "><i class="fas fa-wifi pr-2"></i>Timeline</li>
+                    <li class="feature1 pb-3 text-color"><i class="fas fa-user pr-2"></i>About</li>
+                    <li class="feature1 pb-3 "><i class="fas fa-user-friends fa-x2 pr-2"></i>Mates</li>
+                    <li class="feature1 pb-3 "><i class="fas fa-comment-alt pr-2"></i>Thoughts</li>
+                    <li class="feature1 pb-3 "><i class="fas fa-heart pr-2"></i>Like</li>
+                    <li class="feature2 mb-2 "><i class="fas fa-play pr-2"></i>Media</li>
+                </ul>
+            </div>
+            <div class="col-md-8 ">
+                <div class="col ">
+                    <div class="row text-color mb-5 ">
+                        <div class="col ml-3 ">
+                            <i class="fas fa-map-marker-alt "></i> Location
+                            <h6 class="h6-text text-dark ">Lagos, Nigeria</h6>
+                        </div>
+                        <div class="col icon-style ">
+                            <i class="fas fa-at "></i> email
+                            <h6 class="h6-text text-dark ">fidelisinaku@gmail.com</h6>
+                        </div>
+                        <div class="col ">
+                            <i class="fas fa-building "></i> Department
+                            <h6 class="h6-text text-dark ">Engineering</h6>
+                        </div>
+                        <div class="col ">
+                            <i class="fas fa-birthday-cake "></i> Birthday
+                            <h6 class="h6-text text-dark ">09 March</h6>
+                        </div>
+                    </div>
+                    <div class="container mb-4 ">
+                        <div class="text-color1 ">
+                            About
+                            <p class="p-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, accusantium aspernatur deleniti deserunt molestiae debitis. Architecto eligendi iusto quasi minus maiores debitis qui perspiciatis tenetur, enim deleniti
+                                voluptate repellendus iure est dolores inventore placeat molestias a repudiandae! Eos odio molestiae commodi labore magnam explicabo officia laborum quaerat earum! Laborum reprehenderit, in officia ratione hic repellat,
+                                molestias id animi reiciendis tempora obcaecati voluptatibus debitis esse fugiat odio sed iste minima error are molestias id animi reiciendis tempora obcaecati voluptatibus debitis esse fugiat odio sed iste minima error?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container ">
+                        <div class="socials ">
+                            <i class="fab fa-facebook-square "></i>
+                            <i class="fab fa-twitter-square "></i>
+                            <i class="fab fa-linkedin "></i>
+                            <i class="fab fa-stack-overflow "></i>
+                            <i class="fab fa-instagram-square "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2 ">
+        <div class="row ">
+
+            <div class="col-md-4 feature ">
+                <ul class="features-ul1 ml-5 ">
+                    <li class="feature0 text-center p-1 ">
+                        <h6 style="font-size: 13px; ">Profile is 84% complete</h6>
+                        <img src="images/line.png " class="w-50 text-center " alt=". ">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-8 ">
+                <div class="row text-color ">
+                    <div class="col ml-4 ">
+                        <div class="mb-3 ">
+                            Education
+                        </div>
+
+                        <div class="mb-3 h6-text text-dark ">
+                            <i class="fas fa-graduation-cap "></i> Caleb University
+                            <h6 class="h6-text text-dark ">Computer Engineering</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid mt-1 ">
+        <div class="row ">
+
+            <div class="col-md-4 feature ">
+                <ul class="features-ul ml-5 ">
+                    <li class="feature0 pb-1 ">Profile</li>
+                    <li class="feature1 pb-1 ">
+
+                        <img src="images/Profile.png" class="w3-bar-item w3-circle" style="width:45px" alt=""> Jonathan Bass<br> <span style="font-size: 11px">Caleb University</span>
+                    </li>
+                    <li class="feature1 pb-1 "><img src="images/Profile2.png" class="w3-bar-item w3-circle" style="width:45px" alt="">Gabriel Stannis</li>
+                    <li class="feature1 pb-1 "><img src="images/Profile3.jpg" class="w3-bar-item w3-circle" style="width:45px" alt="">Oluwaseun Ibge</li>
+                    <li class="feature1 pb-1 "><img src="images/g-4.png" alt="">Precious Igwe</li>
+                    <li class="feature1 pb-1 "><img src="images/g-5.png" alt="">Daniel Offion</li>
+                    <p>see all</p>
+                </ul>
+            </div>
+
+            <div class="col-md-8 ">
+                <div class="row text-color ">
+                    <div class="col ml-4 ">
+                        <div class="h6-text text-dark mb-3 ">
+                            <i class="fas fa-graduation-cap "></i> University of Lagos
+                            <h6 class="h6-text text-dark ">Electronics and Communication Engineering</h6>
+                        </div>
+                        <div class="mb-3 ">
+                            <h6> Contact Information</h6>
+                        </div>
+
+                        <div class="mb-3 h6-text text-dark ">
+                            <i class="fas fa-home "></i> Address
+                            <h6 class="h6-text text-dark ">23 Opebi Street Ikeja-Lagos, Nigeria</h6>
+                        </div>
+                        <div class="h6-text text-dark mb-4 ">
+                            <i class="fas fa-phone-alt "></i> Phone
+                            <h6 class="h6-text text-dark ">+234 8012345678</h6>
+                            <h6 class="h6-text text-dark ">+234 8012345678</h6>
+                        </div>
+                        <hr>
+                        <div class="mt-4 mb-2 ">
+                            <h6>Business</h6>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 ">
+                            <div class="col mb-4 ">
+                                <div class="card ">
+                                    <img src="./images/watch.jpg " class="card-img-top w-100 " alt="... ">
+                                    <div class="card-body ">
+                                        <h6 class="card-title ">Karatbars</h6>
+                                        <p class="card-text cards ">4.0 |
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4 ">
+                                <div class="card ">
+                                    <img src="./images/perfume.png " class="img-fluid card-img-top w-100 " alt="... ">
+                                    <div class="card-body ">
+                                        <h6 class="card-title ">Enchanted</h6>
+                                        <p class="card-text cards ">4.0 |
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="far fa-star "></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-5 ">
+                                <div class="card ">
+                                    <img src="./images/phone.png " class="card-img-top w-100 " alt="... ">
+                                    <div class="card-body ">
+                                        <h6 class="card-title ">Mobile Plug </h6>
+                                        <p class="card-text cards ">4.0 |
+                                            <i class="fas fa-star ">
+                                            </i><i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="far fa-star "></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
