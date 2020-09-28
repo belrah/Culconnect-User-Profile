@@ -149,3 +149,52 @@ img {
     display: block
     /* remove gap*/
 }
+
+article.bel>div {
+    width: 20rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    margin: 1rem auto;
+    margin-right: 6rem;
+    margin-left: 3rem;
+}
+
+.bel-header {
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between!important;
+    width: 100%;
+    padding: .5rem;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.bel-header p {
+    display: block;
+    font-weight: bold;
+}
+
+.bel-body {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    align-items: flex-start;
+    margin-left: .5rem;
+}
+
+.bel-img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.bel-name {
+    padding-top: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.bel-name :first-child {
+    margin-bottom: 0.25rem;
+}
+
+.bel-name :last-child {
+    opacity: 0.5!important;
+}
