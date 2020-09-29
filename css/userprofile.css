@@ -78,6 +78,8 @@ body {
     width: 200px;
 }
 
+
+/* 
 .features-ul {
     list-style: none;
     width: 50%;
@@ -96,7 +98,7 @@ body {
     border: 1px solid black;
     box-sizing: border-box;
     text-align: left;
-}
+} */
 
 .text-color {
     font-weight: 700px;
@@ -197,4 +199,14 @@ article.bel>div {
 
 .bel-name :last-child {
     opacity: 0.5!important;
+}
+
+.btn-link1 {
+    margin: .5em 0 .5em 12em;
+}
+
+.btn-link1:hover {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
 }
