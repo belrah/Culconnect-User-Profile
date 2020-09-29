@@ -27,6 +27,10 @@ body {
     font-weight: 700px;
 }
 
+.num2 {
+    margin-left: 23.5em;
+}
+
 .head-profile {
     border-radius: 60px;
     margin-top: 11rem;
@@ -49,11 +53,19 @@ body {
 .header-btn:hover {
     background-color: #000000;
     color: orangered;
-    border: ipx solid orangered;
+    border: 1px solid orangered;
+}
+
+.btn-link:hover {
+    background-color: #000;
+    background-color: #000000;
+    color: orangered !important;
+    border: 1px solid orangered;
+    text-decoration: none !important;
 }
 
 .card-profile {
-    margin-left: 22rem;
+    margin-left: 23rem;
     margin-bottom: 2rem;
     border-radius: 5px;
     width: 12%;
@@ -203,10 +215,12 @@ article.bel>div {
 
 .btn-link1 {
     margin: .5em 0 .5em 12em;
+    color: orangered !important;
 }
 
 .btn-link1:hover {
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
     text-transform: capitalize;
+    text-decoration: none !important;
 }
