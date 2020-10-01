@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 60vh;
+    width: 100%;
 }
 
 .num {
@@ -27,9 +28,10 @@ body {
     font-weight: 700px;
 }
 
-.num2 {
+
+/* .num2 {
     margin-left: 23.5em;
-}
+} */
 
 .head-profile {
     border-radius: 60px;
@@ -172,7 +174,7 @@ article.bel>div {
     border: 1px solid #000;
     border-radius: 0.25rem;
     margin: 1rem auto;
-    margin-right: 6rem;
+    margin-right: 4rem;
     margin-left: 3rem;
 }
 
@@ -231,4 +233,19 @@ article.bel>div {
 
 /*-----required breakpoints-----*/
 
-@media screen and (max-width: 320px) {}
+@media (min-width: 200px)and (max-width: 500px) {
+    .card-profile {
+        margin-left: 12rem;
+        top: -7em;
+        clear: left;
+        border-radius: 5px;
+        width: 80%;
+        height: 5rem;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .header-btn {
+        margin-top: -29em;
+        clear: left;
+    }
+}
