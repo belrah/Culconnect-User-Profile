@@ -84,6 +84,23 @@ body {
     color: rgb(69, 124, 69);
 }
 
+.drop {
+    margin-left: 1em;
+}
+
+.btn-link1:hover {
+    background-color: orangered;
+    color: #fff !important;
+    text-transform: capitalize;
+    text-decoration: none !important;
+}
+
+.head-img {
+    width: 6rem;
+    border-radius: 50%;
+    margin-top: 11rem;
+}
+
 
 /*-------section-two----------*/
 

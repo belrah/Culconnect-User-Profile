@@ -15,7 +15,7 @@
     <!-- google fonts --->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--- Main CSS ------>
-    <link rel="stylesheet" href="./css/userprofile.css">
+    <link rel="stylesheet" href="css/userprofile.css">
 </head>
 
 <body>
@@ -29,8 +29,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <form class="form-inline my-2 my-lg-0 ml-3">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control" id="search" width="400px" type="search" placeholder="&#xF002; Search..." style="width:400px;font-family:FontAwesome, Arial; font-style:normal; font-size:12px;" aria-label="Search">
                 </form>
             </ul>
             <div class="nav-item active">
@@ -67,18 +67,30 @@
                     <div class="container ">
                         <div class="row">
                             <div class="col">
-                                <img src="./images/nav-profile.jpg" alt="." class="img-fluid head-profile">
+
+                                <img class="head-img " src="./images/nav-profile.jpg " alt="placeholder " />
                             </div>
                             <div class="head-text">
                                 <h4 class="text-white">Fidelis Inaku <i class="fas fa-check-circle pl-4 text-success"></i></i>
                                 </h4>
                                 <div class="col">
-                                    <button type="button" class="btn btn-link">Caleb University</button>
-                                    <i class="fas fa-ellipsis-h text-white ml-1"></i>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-link">Caleb University</button>
+                                        <div class="dropdown drop">
+                                            <a class="btn btn-link1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-h text-white"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item font-weight-bolder" href="#">Report Profile</a>
+                                                <a class="dropdown-item font-weight-bolder" href="#">Book User</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col head-text">
-                                <!-- <img src="./images/stroke.png" alt="" class="bg-success "> -->
+
                             </div>
                         </div>
                     </div>
@@ -89,11 +101,11 @@
                             <p>300</p>
                             <p class="pl-4">250</p>
                             <p class="pl-4">1.5k</p>
-                            <!-- <ul class="row ">
+                            <ul class="row ">
                                 <li>300</li>
                                 <li style="margin-left: 2.5em;">250</li>
                                 <li style="margin-left: 2.5em;">1.5k</li>
-                            </ul> -->
+                            </ul>
                         </div>
                     </div>
 
@@ -102,20 +114,6 @@
                         <button type="button " class="btn header-btn ml-2">
                             <i class="far fa-envelope fa-x2 "> Messages</i>
                         </button>
-                    </div>
-                </div>
-                <div class="container ">
-                    <div class="row ">
-                        <div class="card card-profile ">
-                            <div class="card-body ">
-                                <a href=" ">
-                                    <p class="card-text text-dark ">Report Profile</p>
-                                </a>
-                                <a href=" ">
-                                    <p class="card-text pb-1 text-dark ">Book User</p>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -194,12 +192,12 @@
                             <i class="fas fa-map-marker-alt "></i> Location
                             <h6 class="h6-text text-dark ">Lagos, Nigeria</h6>
                         </div>
-                        <div class="col icon-style ">
+                        <div class="col icon-style">
                             <i class="fas fa-at "></i> email
                             <h6 class="h6-text text-dark ">fidelisinaku@gmail.com</h6>
                         </div>
-                        <div class="col pl-2">
-                            <i class="fas fa-building  "></i> Department
+                        <div class="col pl-2 ml-4">
+                            <i class="fas fa-building "></i> Department
                             <h6 class="h6-text text-dark ">Engineering</h6>
                         </div>
                         <div class="col ">
@@ -251,7 +249,7 @@
                 </ul>
             </div> -->
 
-            <div class="col-md-8 ">
+            <div class="col-md-8 ml-2">
                 <div class="row text-color ">
                     <div class="col ml-4 ">
                         <div class="mb-3 ">
